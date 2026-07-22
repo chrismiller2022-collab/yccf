@@ -977,3 +977,336 @@ td {
   .stat-row { gap: 1.5rem; }
   .sub-grid { grid-template-columns: repeat(3, 1fr); }
 }
+
+/* ===== Futures / Win Totals Table ===== */
+
+.futures-table {
+  min-width: 900px;
+}
+
+.futures-table th {
+  white-space: nowrap;
+}
+
+.bet-pill {
+  display: inline-block;
+  padding: 0.15rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.bet-over {
+  background: rgba(255,200,87,0.15);
+  color: var(--gold);
+}
+
+.bet-under {
+  background: rgba(25,100,126,0.25);
+  color: var(--chalk-dim);
+}
+
+/* ===== Team Page Enhanced ===== */
+
+.team-stats-row {
+  display: flex;
+  gap: 1rem;
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 0;
+  flex-wrap: wrap;
+}
+
+.team-stat-card {
+  flex: 1;
+  min-width: 140px;
+  background: var(--turf-panel);
+  border: 1px solid var(--hash);
+  border-radius: 10px;
+  padding: 1.1rem 1.25rem;
+  text-align: center;
+}
+
+.team-stat-value {
+  font-family: 'Anton', sans-serif;
+  font-size: 1.8rem;
+  margin-top: 0.3rem;
+  letter-spacing: 0.02em;
+}
+
+.team-stat-sub {
+  font-size: 0.72rem;
+  color: var(--chalk-dim);
+  margin-top: 0.25rem;
+}
+
+.futures-summary {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  background: var(--turf-panel);
+  border: 1px solid var(--hash);
+  border-radius: 10px;
+  padding: 1.25rem 1.5rem;
+}
+
+.futures-summary-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.futures-label {
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--chalk-dim);
+}
+
+.futures-value {
+  font-family: 'Anton', sans-serif;
+  font-size: 1.3rem;
+  color: var(--chalk);
+}
+
+.schedule-table {
+  min-width: 600px;
+}
+
+.rank-flag-sm {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 1.5rem;
+  height: 1.2rem;
+  padding: 0 0.3rem;
+  background: var(--turf-panel-2);
+  color: var(--chalk-dim);
+  font-family: 'Anton', sans-serif;
+  font-size: 0.72rem;
+  clip-path: polygon(0 0, 85% 0, 100% 50%, 85% 100%, 0 100%);
+  margin-left: 0.4rem;
+}
+
+.rank-flag-sm.top4 {
+  background: var(--gold);
+  color: var(--turf);
+}
+
+.rank-flag-sm.top12 {
+  background: var(--gold-dim);
+  color: var(--chalk);
+}
+
+/* ===== Playoff Bracket ===== */
+
+.bracket-wrap {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+.bracket-section {
+  margin-bottom: 2.5rem;
+}
+
+.bracket-section-label {
+  text-align: center;
+  font-family: 'Anton', sans-serif;
+  font-size: 1.1rem;
+  color: var(--gold);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.bracket-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.bracket-grid-2 {
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.bracket-grid-1 {
+  grid-template-columns: 1fr;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.bracket-card {
+  background: var(--turf-panel);
+  border: 1px solid var(--hash);
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+}
+
+.bracket-card-final {
+  border-color: var(--gold-dim);
+  background: rgba(255,200,87,0.04);
+}
+
+.bracket-card-label {
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--chalk-dim);
+  margin-bottom: 0.75rem;
+}
+
+.bracket-team-row {
+  margin-bottom: 0.25rem;
+}
+
+.bracket-team-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
+  background: none;
+  border: none;
+  color: var(--chalk);
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 0.85rem;
+  padding: 0.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.bracket-team-btn:hover {
+  background: var(--turf-panel-2);
+}
+
+.bracket-seed-num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 1.5rem;
+  height: 1.5rem;
+  background: var(--gold-dim);
+  color: var(--chalk);
+  font-family: 'Anton', sans-serif;
+  font-size: 0.85rem;
+  border-radius: 4px;
+}
+
+.bracket-team-name {
+  flex: 1;
+  text-align: left;
+}
+
+.bracket-team-rating {
+  font-size: 0.75rem;
+  color: var(--chalk-dim);
+  font-variant-numeric: tabular-nums;
+}
+
+.bracket-vs {
+  font-family: 'Anton', sans-serif;
+  color: var(--chalk-dim);
+  font-size: 0.85rem;
+  margin: 0.25rem 0;
+}
+
+.bracket-spread {
+  margin-top: 0.6rem;
+  font-size: 0.72rem;
+  color: var(--gold);
+  font-weight: 600;
+}
+
+/* ===== Natty Odds ===== */
+
+.bracket-seeds {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0 1.5rem 2rem;
+}
+
+.natty-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 0.75rem;
+}
+
+.natty-card {
+  background: var(--turf-panel);
+  border: 1px solid var(--hash);
+  border-radius: 8px;
+  padding: 0.85rem 1rem;
+  cursor: pointer;
+  transition: border-color 0.15s;
+}
+
+.natty-card:hover {
+  border-color: var(--gold-dim);
+}
+
+.natty-card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.6rem;
+}
+
+.natty-team {
+  font-weight: 700;
+  color: var(--chalk);
+  font-size: 0.85rem;
+}
+
+.natty-bar-wrap {
+  height: 6px;
+  background: rgba(255,255,255,0.05);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.natty-bar-fill {
+  height: 100%;
+  background: var(--gold);
+  border-radius: 3px;
+  transition: width 0.3s;
+}
+
+.natty-pct {
+  margin-top: 0.35rem;
+  font-family: 'Anton', sans-serif;
+  font-size: 1.1rem;
+  color: var(--gold);
+}
+
+/* ===== Responsive ===== */
+
+@media (max-width: 900px) {
+  .bracket-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .team-stats-row {
+    gap: 0.75rem;
+  }
+  .team-stat-card {
+    min-width: 120px;
+  }
+}
+
+@media (max-width: 640px) {
+  .bracket-grid {
+    grid-template-columns: 1fr;
+  }
+  .futures-summary {
+    gap: 1rem;
+  }
+  .natty-grid {
+    grid-template-columns: 1fr;
+  }
+}
